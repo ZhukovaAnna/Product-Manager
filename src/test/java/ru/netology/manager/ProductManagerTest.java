@@ -41,7 +41,7 @@ class ProductManagerTest {
 
     @Test
     void shouldFindSmartphoneByNameExist() {
-        String nameToFind = "iphone";
+        String nameToFind = "iPhone 11";
         Product[] expected = new Product[]{apple};
         Product[] actual = manager.searchBy(nameToFind);
         assertArrayEquals(expected, actual);
