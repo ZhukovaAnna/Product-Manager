@@ -104,7 +104,7 @@ class ProductManagerTest {
         manager.productAdd(fourth);
         manager.productAdd(google);
         String nameToFind = "Google";
-        Product[] expected = new Product[]{fourth,google};
+        Product[] expected = new Product[]{fourth, google};
         Product[] actual = manager.searchBy(nameToFind);
         assertArrayEquals(expected, actual);
     }
